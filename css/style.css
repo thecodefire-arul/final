@@ -15,22 +15,8 @@
     background: teal;
 }
 
-.menu-btn{
-    z-index: 2;
-    position: fixed;
-    float: right;
-    right: 0;
-    height: 20px;
-    width: 20px;
-    padding: 5%;
-}
-
-.menu-btn img{
-    cursor: pointer;
-}
-
 #navbar{
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -245,9 +231,34 @@
     color: #55acee;
 }
 
-.menu-btn img{
-    height: 100%;
+.logo{
+    z-index: 2;
+    position: fixed;
+    top: 5%;
+    left: 3%;
+    height: 50px;
+    width: 50px;
+}
+
+.logo img{
+    position: relative;
     width: 100%;
+    height: 100%;
+}
+
+.menu-btn{
+    z-index: 2;
+    position: fixed;
+    float: right;
+    right: 0;
+    height: 20px;
+    width: 20px;
+    padding: 5%;
+}
+
+
+.menu-btn img{
+    cursor: pointer;
 }
 
 #home{
@@ -262,20 +273,6 @@
     text-align: center;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
-}
-
-#home .logo{
-    position: fixed;
-    top: 5%;
-    left: 3%;
-    height: 50px;
-    width: 50px;
-}
-
-#home .logo img{
-    position: relative;
-    width: 100%;
-    height: 100%;
 }
 
 #home .text{
@@ -434,7 +431,7 @@
 }
 
 @media(max-width: 768px) {
-    #home .logo{
+    .logo{
         top: 3%;
         left: 5%;
     }
