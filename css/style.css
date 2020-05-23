@@ -468,4 +468,39 @@
     #navbar .container .nav-links{
         margin: 6% 0;
     }
+
+    #intro{
+        height: 100%;
+        background-size: 100% 100%;
+    }
+
+    #intro .container{
+        display: block;
+    }
+
+    #intro .container .text{
+        padding: 5% 0;
+        margin: 0;
+    }
+
+    #intro .container .text p{
+        font-size: 20px;
+    }
+
+    #intro .container .text .button{
+        margin: 5%;
+        padding: 5px;
+    }
+
+    #intro .container .text .button.contributer{
+        width: 35%;
+    }
+
+    #intro .container .text .button a{
+        font-size: 15px;
+    }
+
+    #intro .container .img img{
+        margin-top: 5%;
+    }
 }
