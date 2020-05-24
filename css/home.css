@@ -1,10 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Bad+Script');
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url(https://fonts.googleapis.com/css?family=Alfa+Slab+One:400);
-@import url(https://fonts.googleapis.com/css?family=Concert+One);
-
-
 *{
     margin: 0;
     padding: 0;
@@ -179,100 +172,105 @@ body::-webkit-scrollbar{
     cursor: pointer;
 }
 
-#home{
-    z-index: 1;
-    position: relative;
+#intro{
     height: 100vh;
     width: 100%;
-    background-color: #000000;
+    background-color: #1C2839;
     background-size: 100% 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
 }
 
-#home .text{
-    margin: 0 auto;
-    padding-top: 15%;
+#intro .container{
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+
+#intro .container .text{
+    height: 100%;
+    width: 100%;
+}
+
+#intro .container .text p{
     font-size: 30px;
+    color: #fff;
+    position: relative;
+    top: 25%;
+    left: 20%;
+    letter-spacing: 1px;
+}
+
+#intro .container .text p span{
     font-weight: 700;
-}
-
-#home .name{
-    margin: 1% 0;
-    padding: 0 1%;
-    
-}
-
-#home .name h1{
-    font-size: 150px;
-    font-weight: 900;
     letter-spacing: 2px;
-    background: url(../img/name-background.jpg);
-    background-repeat: repeat-x;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: backcolor 20s linear infinite;
 }
 
-@keyframes backcolor{
-    0%{
-        background-position: left 0px top 10px;
-
-    }
-
-    40%{
-        background-position: left 400px top 10px;
-    }
+#intro .container .text p a{
+    margin-top: 20px;
+    color: coral;
+    transition: all .2s ease;
 }
 
-#home .button{
+#intro .container .text p a:hover{
+    color: lightcoral;
+}
+
+#intro .container .text .or{
+    top: 30%;
+    margin: 5px;
+}
+
+#intro .container .text .button{
+    border: 1px solid #000000;
     cursor: pointer;
-    margin: 0 auto;
-    width: 10%;
-    border: 1px solid #ffffff;
-    padding: 1%;
-    border-radius: 5px;
+    position: relative;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px;
+    top: 30%;
+    left: 20%;
+    color: #FA7A14;
     transition: all .5s ease;
 }
 
-#home .button:hover{
-    background-color: #ffffff;
+#intro .container .text .button:hover{
+    border: 1px solid #e4405f;
+    background-color: #e4405f;
 }
 
-#home .button a{
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 800;
-}
-
-#home .button:hover a{
+#intro .container .text .button:hover a{
     color: #000000;
 }
 
+#intro .container .text .button.contributer{
+    width: 50%;
+}
 
-@media(max-width: 768px) {
+#intro .container .text .button.member{
+    width: 30%;
+}
+
+#intro .container .text .button a{
+    font-size: 20px;
+    color: #e4405f;
+    transition: all .5s ease;
+}
+
+#intro .container .img{
+    height: 100%;
+    width: 100%;
+}
+
+#intro .container .img img{
+    width: 100%;
+    margin-top: 15%;
+}
+
+@media (max-width: 768px) {
     .logo{
         top: 3%;
         left: 5%;
-    }
-
-    #home .text{
-        padding-top: 40%;
-    }
-
-    #home .name h1{
-        font-size: 70px;
-    }
-
-    #home .button{
-        width: 20%;
-    }
-
-    #home .button a{
-        font-weight: 400;
     }
 
     #navbar .wrap ul.wrap-nav > li {
@@ -305,7 +303,7 @@ body::-webkit-scrollbar{
         margin: 5px 0;
     }
 
-    #intro{
+      #intro{
         height: 100%;
         background-size: 100% 100%;
     }
