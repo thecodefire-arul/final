@@ -347,22 +347,13 @@ body::-webkit-scrollbar{
         float: right;
     }
 
-    #home{
-        height: 100vh;
-        width: 100%;
+    #intro .container{
+        padding-top: 30%;
+        margin-left: 0;
     }
 
-    #home .text{
-        font-size: 20px;
-        margin-bottom: 4%;
-    }
-
-    #home .name h1{
-        font-size: 50px;
-    }
-
-    #home .button{
-        margin-top: 10%;
-        width: 50%;
+    #intro .container .text p{
+        width: 75%;
+        font-size: 18px;
     }
 }
