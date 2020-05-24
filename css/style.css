@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Bad+Script');
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Alfa+Slab+One:400);
+@import url(https://fonts.googleapis.com/css?family=Concert+One);
 
 
 *{
@@ -18,7 +20,8 @@
 #navbar{
     z-index: 3;
     position: absolute;
-    height: 100%;
+    margin: 0;
+    height: 100vh;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     position: fixed;
@@ -234,8 +237,8 @@
 .logo{
     z-index: 2;
     position: fixed;
-    top: 5%;
-    left: 3%;
+    top: 2%;
+    left: 2%;
     height: 50px;
     width: 50px;
 }
@@ -253,7 +256,7 @@
     right: 0;
     height: 20px;
     width: 20px;
-    padding: 5%;
+    padding: 2%;
 }
 
 
@@ -430,6 +433,91 @@
     margin-top: 15%;
 }
 
+#services{
+    max-height: 100vh;
+    width: 100%;
+}
+
+#services .title{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#services .title h1{
+    font-size: 50px;
+    color: #1449CB;
+}
+
+#services .container{
+    height: 91.2vh;
+    width: 100%;
+    grid-template-columns: 30% 30% 30%;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#services .container .box{
+    margin: 0 auto;
+    /* overflow: hidden; */
+    position: relative;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid #EF7AE4;
+    width: 88%;
+    height: 88%;
+    text-align: center;
+    transition: all .5s ease;
+}
+
+#services .container .box:hover{
+    border-radius: 10px;
+}
+
+#services .container .box .fas,
+#services .container .box .fab{
+    position: relative;
+    margin: 20% 25%;
+    line-height: 100px;
+    font-size: 100px;
+    transition: all .5s ease;
+}
+
+#services .container .box:hover .fas,
+#services .container .box:hover .fab{
+    margin: 5% 0;
+    font-size: 50px;
+}
+
+#services .container .box .text{
+    position: relative;
+    display: none;
+    color: #ffffff;
+    margin: 0;
+    transition: all .5s esae;
+}
+
+#services .container .box .text h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Alfa Slab One', cursive;
+    color: #e4405f;
+}
+
+#services .container .box:hover .text{
+    display: block;
+    margin: 0;
+}
+
+#services .container .box .text p{
+    color: grey;
+    font-family: 'Concert One', cursive;
+    margin-top: 1%;
+}
+
 @media(max-width: 768px) {
     .logo{
         top: 3%;
@@ -500,4 +588,43 @@
     #intro .container .img img{
         margin-top: 5%;
     }
+
+    #services{
+        position: absolute;
+        background-size: 100% 100%;
+        height: 100%;
+        width: 100%;
+    }
+
+    #services .title h1{
+        font-size: 35px;
+    }
+
+    #services .container{
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    #services .container .box{
+        margin: 0 auto;
+        margin-bottom: 5%;
+        height: 45%;
+        width: 50%;
+    }
+
+    #services .container .box:hover{
+        border-radius: 5px;
+    }
+
+    #services .container .box .fas,
+    #services .container .box .fab{
+        position: relative;
+        margin: 30% 15%;
+        font-size: 100px;
+    }
+
+    /* #services .container .box .text{
+        margin-top: -100%;
+    } */
 }
