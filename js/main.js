@@ -1,3 +1,13 @@
+//Loader
+
+$(document).ready(function() {
+    setTimeout(fade, 3000);
+})
+
+function fade() {
+    $("#loader").fadeOut('slow');
+}
+
 //Show Navbar
 
 $(document).ready(function(){

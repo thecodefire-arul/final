@@ -21,6 +21,38 @@ body::-webkit-scrollbar{
     background: teal;
 }
 
+#loader {
+    height: 100vh;
+    width: 100%;
+    background-color: #0d161f;
+}
+
+#loader .loader-container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#loader .loader-container .loader-div {
+    border: none;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    border: 8px solid #162534;
+    border-top: 8px solid #09f;
+    border-radius: 50%;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(-360deg);
+    }
+}
+
 #navbar {
     display: none;
     position: fixed;
