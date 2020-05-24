@@ -338,6 +338,10 @@ body::-webkit-scrollbar{
     #intro .container .img img{
         margin-top: 5%;
     }
+
+    #intro svg{
+        width: 100%;
+    }
 }
 
 @media (max-width: 500px) {
