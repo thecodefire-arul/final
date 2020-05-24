@@ -38,6 +38,7 @@ body::-webkit-scrollbar{
     justify-content: center;
     text-align: center;
     align-items: center;
+    position: fixed;
 }
 
 #navbar .close-btn .fas{

@@ -37,6 +37,7 @@ body::-webkit-scrollbar{
 }
 
 #navbar .close-btn{
+    position: fixed;
     height: 30px;
     width: 30px;
     float: right;
@@ -303,5 +304,32 @@ body::-webkit-scrollbar{
         color: #333;
         display: block;
         margin: 5px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu-btn{
+        top: 5%;
+        right: 5%;
+        float: right;
+    }
+
+    #home{
+        height: 100vh;
+        width: 100%;
+    }
+
+    #home .text{
+        font-size: 20px;
+        margin-bottom: 4%;
+    }
+
+    #home .name h1{
+        font-size: 50px;
+    }
+
+    #home .button{
+        margin-top: 10%;
+        width: 50%;
     }
 }
